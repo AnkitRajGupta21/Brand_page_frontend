@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100&family=Nunito:wght@500&family=PT+Serif:wght@700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab&display=swap');
+body{
+  font-family: "Poppins",sans-serif;
+  background-color: rgb(255, 255, 255);
+}
+:root{
+  --red:#D01C28;
+}
+*{
+  margin:0;
+  box-sizing: border;
+}
+
+
+  
+
+@media  (max-width: 960px) {
+  .hero {
+    display: flex; /* Enable flexbox for hero section */
+     /* Stack elements by default */
+  }
+  
+  .hero-content {
+    order: 1; /* Ensure hero content appears before the image */
+  }
+
+  .hero-image {
+    order: 4; /* Move the hero image below other content */
+    margin-top: 20px;
+    align-self: center /* Add some space between content and hero image */
+  }
+}
+@media screen and (max-width: 768px) {
+  .nav-links {
+    display: none; /* Hide the navigation links by default on smaller screens */
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 70px; /* Adjust this value according to your design */
+    left: 0;
+    background-color: #333;
+    padding: 20px;
+    z-index: 1;
+  }
+
+  .nav-links.show {
+    display: flex; /* Show the navigation links when the show class is applied */
+  }
+
+  .menu-toggle {
+    display: flex; /* Show the burger menu on smaller screens */
+  }
+}
+.menu-toggle {
+  display: none; /* Initially hide the burger menu */
+  flex-direction: column;
+  cursor: pointer;
+}
+
+
+.menu-toggle span {
+  height: 3px;
+  width: 25px;
+  background-color: #333;
+  margin: 4px 0;
+}
+.hero {
+  display: flex; /* Enable flexbox for hero section */
+   /* Stack elements by default */
+}
+.hero-image{
+    flex-direction: column;
+   
+  }
+
+
+
+.log{
+  all: unset;
+  padding:6px 16px;
+  background: linear-gradient( 67deg, rgb(255, 1, 1), rgb(0, 0, 0));
+  height:32px;
+  color:white;
+  font-weight:500;
+  border-radius: 4px;
+}
+nav{
+  display:flex;
+  
+  max-width: 1280px;
+  margin:0 auto;
+  height:72px;
+  align-items: center;
+  background-color: white;
+  width: 100%;
+  
+  
+}
+.login1 h1{
+  
+  font-weight: 300;
+  display: flex;
+  justify-content: center;
+  
+  }
+  .account{
+    margin-left: 24px;
+    margin-bottom: 14px;
+  }
+.reg h1{
+  display: flex;
+  justify-content: center;
+font-weight: 300;
+
+}
+nav.container ul li a {
+  color: rgb(0, 0, 0);
+  
+  /* Set the color of the navigation links */
+}
+.container{
+  width:100%;
+  
+  margin-left: 10px;
+  
+}
+.inputButton{
+  margin:25px;
+  border-color:#f40000;
+  padding:10px;
+  width:180px;
+}
+nav ul {
+  
+  display:flex;
+
+  list-style: none;
+  gap:24px;
+}
+.hero{
+
+  display:flex;
+  align-items:center;
+  height:calc(100vh-73px);
+
+}
+.hero h2{
+  font-weight:800;
+  line-height: 102px;
+  font-size:100px;
+align-items: center;
+border-width: 10px;
+border-top: 0px;
+
+  background: -webkit-linear-gradient(#000000, #ff0000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+.special{
+  border:#D01C28;
+}
+.hero p{
+  font-weight:600;
+  color: rgb(37, 33, 33);
+  max-width: 400px;
+}
+.hero-btn{
+  display:flex;
+  gap:40px;
+}
+.secondary-btn{
+  background:transparent;
+  color:rgb(184, 179, 179);
+
+  border: 1px solid gray;
+}
+.shopping p{
+  font-size: 14px;
+  margin-bottom:8px;
+
+}
+
+.home-border{
+
+  max-width: 250px;
+  padding: 1rem;
+  position: relative;
+  background: linear-gradient( 67deg, rgb(255, 1, 1), rgb(0, 0, 0));
+  padding: 3px;
+  border-radius: 4px;
+  align-items: right;
+}
+.home {
+background-color: #ffffff;
+padding:5px;
+padding-left: 15px;
+padding-right: 15px;
+
+
+}
+
+.special{
+  border-width: 100px;
+  border-color: #000000;
+  color:var(--red);
+  text-decoration: none;
+}
+.brand-icons{
+  display:flex;
+  gap:16px;
+}
+.hero-content{
+  display: flex;
+  flex-direction: column;
+  gap:36px;
+}
+.hero-btn button{
+  font-size:24px;
+}
+a{
+  
+  text-decoration: none;
+}
+.inputBox{
+  display:flex;
+  border-radius: 8px;
+  margin: 25px;
+  padding: 7px;
+  width:300px;
+  border:1px solid rgb(204, 148, 148);
+  align-items: center;
+}
+.reg{
+  margin-top: 70px;
+  align-items: center;
+  margin-left: 550px;
+  margin-right: 100px;
+  align-items: center;
+ 
+  box-shadow:  2px 2px  12px 1px rgb(97, 97, 97);
+  border-radius: 4px;
+}
+button{
+  border-color: transparent;
+  background-color: transparent;
+  font-family: "Poppins",sans-serif ;
+  font-size: 18px;
+  
+
+}
+.login1{
+  margin-top: 70px;
+  align-items: center;
+  margin-left: 550px;
+  margin-right: 100px;
+  align-items: center;
+ 
+  box-shadow:  2px 2px  12px 1px rgb(97, 97, 97);
+  border-radius: 4px;
+}
+ .login{
+  margin-top: 4px;
+  
+ 
+}
+.log:hover{
+  cursor: pointer;
+  background: linear-gradient( 67deg, rgb(238, 119, 119), rgb(46, 44, 44));
+  border-radius: 8px;
+}
+.dg{
+  background-color: rgb(255, 255, 255);
+  display: inline-block;
+}
+/* Style for the button */
+
+
+/* Style for the dropdown content */
+div {
+  display: inline-block;
+  position: relative;
+}
+
+ .sp {
+  
+  position: absolute;
+  top: 132%;
+  left: 0;
+  right: 109px;
+  background-color: #ffffff;
+  border: 1px solid #ffffff;
+color: grey;
+  padding: 1px;
+  z-index: 1;
+  
+  width: 1680px;;
+  height: 400px;
+ 
+}
+
+.link {
+  color: inherit; /* Inherit the color from the parent */
+  text-decoration: none; /* Remove default underline */
+}
+
+
+
+/* Hover effect for dropdown items */
+div > div >table :hover {
+ 
+
+  color:#f40000;
+  
+}
+
+
+
+.link:hover{
+  border-bottom: 2px solid #000;
+  padding-bottom: 11px;
+}
+
+
+
+
+.imgS{
+  height: 19px;
+  width: 23px;
+
+}
